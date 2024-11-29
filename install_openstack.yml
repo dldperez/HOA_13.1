@@ -1,0 +1,19 @@
+#Playbook for openstack installation
+
+---
+
+- hosts: all
+  become: true
+  roles:
+    - role: ntp
+    - role: openstack
+    - role: sql
+    - role: mesq
+    - role: memcached
+    - role: etcd
+
+
+
+
+
+
